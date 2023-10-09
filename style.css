@@ -1,0 +1,383 @@
+/* Global styles */
+
+* { 
+	padding: 0; 
+	margin: 0; 
+	box-sizing: border-box; 
+} 
+
+body {
+    font-family: "Fira Sans", sans-serif;
+    background-color: #f6f6f6; /* Light gray background */
+    color: #333; /* Dark text color */
+}
+
+/* Header navigation styles */
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background-color: #ff71a1; /* Pink header background */
+}
+
+nav .heading {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff; /* White text color */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+}
+
+nav ul li a {
+    color: #fff; /* White text color */
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #ffacca; /* Lighter pink on hover */
+}
+
+/* Mobile navigation button */
+nav .sideMenuButton {
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: none;
+}
+
+/* Responsive navigation styles */
+@media screen and (max-width: 600px) {
+    nav .sideMenuButton {
+        display: flex;
+    }
+
+    nav .navbar {
+        display: none;
+    }
+
+    .sideNavigationBar {
+        display: block !important;
+    }
+}
+
+/* Side navigation styles */
+.sideNavigationBar {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #ff71a1; /* Pink side nav background */
+    overflow-x: hidden;
+    transition: 0.3s ease-in;
+    padding-top: 60px;
+    display: none;
+}
+
+.sideNavigationBar a {
+    padding: 8px 8px 8px 40px;
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff; /* White text color */
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.sideNavigationBar a button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #ffacca; /* Lighter pink button background */
+    color: #fff; /* White text color */
+    font-size: 16px;
+    border-style: none;
+    font-weight: 700;
+}
+
+.sideNavigationBar a:hover {
+    color: #ff71a1; /* Dark pink on hover */
+}
+
+.sideNavigationBar .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+/* Main header section styles */
+.women-safety-app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #ff71a1; /* Pink header background */
+}
+
+.app-description {
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.app-description h1 {
+    font-size: 36px;
+    color: #fff; /* White text color */
+}
+
+.app-description p {
+    font-size: 18px;
+    color: #fff; /* White text color */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.app-description button {
+    background-color: #ffacca; /* Lighter pink button background */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Style the right side (app image) */
+.app-image {
+    flex: 1;
+    text-align: center;
+}
+
+.app-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for the "Safety Features" section */
+.safety-features {
+    background-color: #ff71a1; /* Pink section background */
+    padding: 60px 0;
+    text-align: center;
+    color: black; /* White text color */
+}
+
+.safety-features .content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.safety-features .title {
+    margin-bottom: 40px;
+}
+
+.safety-features h2 {
+    font-size: 28px;
+}
+
+.feature-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.feature-box {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+    background-color: #fff; /* White box background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon img {
+    width: 200px;
+}
+
+.feature-box h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.feature-box p {
+    font-size: 16px;
+}
+/* Styles for the "About Our Women's Safety App" section */
+.about-app {
+    background-color: #ff71a1; /* Pink section background */
+    padding: 60px 0;
+    text-align: center;
+    color: #fff; /* White text color */
+}
+
+.about-app .content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-app .title {
+    margin-bottom: 40px;
+}
+
+.about-app h2 {
+    font-size: 28px;
+}
+
+.app-description p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.contact-info p.address {
+    font-weight: bold;
+}
+
+/* Footer styles */
+footer {
+    background: #ff71a1; /* Pink footer background */
+    padding: 15px 0;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+footer .footer span {
+    font-size: 17px;
+    font-weight: 400;
+    color: #fff; /* White text color */
+}
+
+footer .footer span a {
+    font-weight: 500;
+    color: #fff; /* White text color */
+}
+
+footer .footer span a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1060px) {
+    .contactMenu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rightside1 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .content1 {
+        width: 100%;
+        margin-top: 2px;
+        color: grey;
+    }
+
+    .side2 img {
+        width: 95%;
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .side2 img {
+        width: 100%;
+    }
+
+    section .topic a {
+        font-size: 20px;
+    }
+
+    section .topic p {
+        font-size: 5px;
+    }
+
+    .about .boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about .boxes .box {
+        max-width: 70%;
+    }
+}
+/* Additional styles for the Women's Safety App section */
+.women-safety-app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #ff71a1; /* Pink header background */
+}
+
+.app-description {
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.app-description h1 {
+    font-size: 36px;
+    color: black; /* White text color */
+}
+
+.app-description p {
+    font-size: 18px;
+    color:  black; /* White text color */
+}
+
+.app-description button {
+    background-color: #ffacca; /* Lighter pink button background */
+    color: black; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* Style the right side (app image) */
+.app-image {
+    flex: 1;
+    text-align: center;
+}
+
+.app-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
